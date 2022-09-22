@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteRule ^q/([^/]*)$ /single_post.php?post-slug=$1 [L]
+RewriteRule ^([^/]*)/topic$ /filtered_posts.php?topic=$1 [L]
+RewriteRule ^sitemap\.xml$ /sitemap.php [L]
